@@ -14,7 +14,7 @@ test('Axios-backed schedule and stats requests retain their response shape', asy
   try {
     assert.deepEqual(await api.schedule(2026), { games: [1] });
     assert.deepEqual(await api.teamDetails({ TeamID: 1 }), { Team: { TEAM_ID: 1 } });
-    assert.match(calls[0], /2026\\/league\\/00_full_schedule_week\\.json$/);
+    assert.ok(calls[0].endsWith('/2026/league/00_full_schedule_week.json'));
     assert.match(calls[1], /TeamID=1/);
   } finally {
     axios.get = originalGet;
