@@ -23,10 +23,10 @@
   "author": "Marvin Thai <marvinthai@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^1.15.0",
     "jsonp": "^0.2.1",
     "path": "^0.12.7",
-    "xmldom": "^0.1.27"
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
